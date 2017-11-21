@@ -5,21 +5,34 @@
 	<link rel="shortcut icon" href="{% static 'img/favicon.ico' %}" type="image/x-icon">
 	<title>Quiz Application</title>
 	<link rel = "stylesheet" href = "{% static 'css/quiz.css' %}">
+	<link rel = "stylesheet" href = "{% static 'css/home.css' %}">
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	
+
 	<script src = "{% static 'js/quiz.js' %}"></script>
 
 </head>
 <body>
+<div id="wrapper">
+	<div class="nav">
+		<ul>
+
+			<li class="active"><a href="#">Fuck it</a></li>
+			<li class="active"><a href="/questions">Reset</a></li>
+			<li class="back"><a href="/admin">Go to Admin</a></li>
+
+			<li class="admin"><a href="/"> Go back </a></li>
+		</ul>
+	</div>
 	<div id = "container">
 		<header>
-			<a href="/" class = "button">Go Back</a>
+
 			<h1>Objective test Question</h1>
-			<!--<p> Test your knowledge in <strong>www.ecedreamer.com </strong></p>-->
 		</header>
 
 		<section>
-			<div id = "results"></div>
+			<div id = "results">
+			</div>
 			<form name = "quizForm" onsubmit = "return submitAnswers(answers = [{% for q in questions %}'{{ q.answer }}',{% endfor %}])">
 			{% for q in questions %}
 				<h3> {{ q.id }}.  {{ q.question }}</h3>
@@ -27,20 +40,33 @@
 				<input type = "radio" name = "q{{ q.id }}" value = "b" id = "q1b">   b. {{ q.option2 }}<br><br>
 				<input type = "radio" name = "q{{ q.id }}" value = "c" id = "q1c">   c. {{ q.option3 }}<br><br>
 				<input type = "radio" name = "q{{ q.id }}" value = "d" id = "q1d">   d. {{ q.option4 }}<br><br>
-
-
 			{% endfor %}
 
-				<br><br>
 				<input type = "submit" value = "Submit Answer">
+
 			</form>
-			<br><br>
-		<a href="/questions" class="button">Reset</a>
+
+
+
 		</section>
-		<footer>
-			<p>Copyright &copy;2017,MLG Allright Reserverd</p>
-		</footer>
+
 	</div>
+</div>
+		<footer>
+			<div class="container-fluid">
+				<div class="row ">
+					<div class="col-md-offset-4">
+										 <ul class="menu list-inline">
+
+													 <li>
+															 <a href="#">Copyright 2017</a>
+													 </li>
+										</ul>
+						</div>
+					</div>
+			</div>
+	 </footer>
+
 
 </body>
 </html>

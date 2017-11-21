@@ -1,0 +1,91 @@
+/* Buttons */
+.button3 {
+    margin-top: 70px;
+    background-color: white;
+    color: #2c3e50;
+    border: 2px solid #333 ;
+    font-size: 36px;
+    font-family: Helvetica, Verdana, sans-serif;
+    text-transform: uppercase;
+    padding : 10px 20px 10px 20px;
+}
+
+.button3:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Navbar */
+
+a{
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: none;
+}
+
+div.nav {
+  margin: 20px;
+}
+
+ul {
+  overflow:hidden;
+  list-style-type: none;
+}
+
+li {
+  height: 25px;
+  float: left;
+  margin-right: 0px;
+  border-right: 1px solid #aaa;
+  padding: 0 20px;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  text-decoration: none;
+  color: #ccc;
+  font: 25px/1 Helvetica, Verdana, sans-serif;
+  text-transform: uppercase;
+
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+li a:hover {
+  color: #666;
+  text-decoration: none;
+}
+
+li.active a {
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+
+li.back{
+  float: right;
+}
+
+li.admin{
+  float:right;
+
+}
+/*Logo*/
+.logo{
+  position: absolute;
+  width: 40%;
+  margin-left: 15%;
+}
+.font{
+  margin-top: 160px;
+  font: 85px/1 Helvetica, Verdana, sans-serif;
+  text-transform: uppercase;
+}

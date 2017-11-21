@@ -1,7 +1,8 @@
 body{
-	background: #FFFFFF;
-	
-	font-family: 'Arial', sans-serif;
+	background: #fff;
+	padding: 0px;
+	margin: 0px;
+	font-family: Helvetica, Verdana, sans-serif;
 	font-size: 14px;
 }
 #container{
@@ -12,12 +13,13 @@ body{
 	padding: 25px;
 }
 header{
+	text-transform: uppercase;
 	text-align: center;
-	border-bottom: #fff dashed 1px;
+
 }
 header h1{
 	margin: 0;
-	padding: 0;
+	padding-bottom: 30px;
 }
 header p{
 	padding: 0;
@@ -25,24 +27,33 @@ header p{
 
 }
 section{
+	border-top: 2px solid #333;
+	padding-bottom: 30px;
 	min-height: 400px;
 }
-footer{
-	background: black;
-	text-align: center;
-}
-input[type = 'submit']{
-	width: 60%;
 
-	border:0;
-	padding: 10px 15px;
-	cursor: pointer;
+input[type = 'submit']{
+	border-top: 1px solid #333;
+
+	margin-top: 50px;
+	margin-left: 290px;
+	text-transform: uppercase;
+	color: #2ECC71;
+	background-color: white;
+	font-size: 20px;
+	border: 2px solid #2ECC71 ;
+	padding: 20px;
+
+}
+input[type = 'submit']:hover {
+    background-color: #2ECC71;
+    color: #fff;
 }
 input[type = 'radio']{
 	transform: scale(2);
 }
 #results h3{
-	background: #FFFFFF;
+	background: #fff;
 
 	padding:10px;
 	margin: 10px 0;
@@ -52,15 +63,53 @@ input[type = 'radio']{
 
 	font-weight: bold;
 }
-.button {
-	font-size: 25px;
-    display: block;
-    width: 95%;
-    height: 25px;
-
-    padding: 20px;
-    text-align: center;
-    border-radius: 5px;
+/* footer shit*/
 
 
-}
+footer {
+  background-color: #222222;
+  min-height: 100px;
+  padding-top: 60px;
+  position: relative;
+  width: 100%;
+  z-index: -2; }
+
+footer .container {
+  position: fixed;
+  z-index: -1;
+  bottom: 75px;
+  width: 100%;
+font-size: 15px;}
+
+footer .social ul {
+  margin-bottom: 35px; }
+
+footer .menu li a {
+	text-transform: none;
+  font-family: Roboto;
+  color: #b1aca1;
+  padding: 10px;
+	font-size: 20px;
+	text-decoration: none;
+margin-left: 550px;}
+
+footer .menu li a:hover {
+  color: #7dabdb; }
+
+
+body {
+  z-index: 0;
+  position: relative; }
+
+#wrapper {
+  z-index: 2;
+  overflow: hidden;
+  width: 100%;
+  padding-bottom: 30px;
+  transition: all 0.5s;
+  background-color: #fff; }
+
+
+
+
+	
